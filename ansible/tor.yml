@@ -1,0 +1,10 @@
+---
+
+- hosts: relays
+  vars:
+    tor_ContactInfo: "Online Person <person@online.com>" # Add your info here
+    tor_nickname: "tor" # Give your network a nickname
+    tor_ExitRelay: false # We don't want to run a relay
+    tor_enableControlSocket: true # Leave this enabled if you want to use Nyx
+  roles:
+   - nusenu.relayor
